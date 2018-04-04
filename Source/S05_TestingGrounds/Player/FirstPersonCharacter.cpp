@@ -120,6 +120,7 @@ void AFirstPersonCharacter::OnFire()
 
 			// spawn the projectile at the muzzle
 			World->SpawnActor<ABallProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+
 		}
 	}
 
