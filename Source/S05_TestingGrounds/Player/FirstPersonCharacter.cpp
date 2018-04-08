@@ -158,6 +158,5 @@ bool AFirstPersonCharacter::EnableTouchscreenMovement(class UInputComponent* Pla
 void AFirstPersonCharacter::OnFire()
 {
 	if (!Gun) { return; }
-	
 	Gun->Fire();
 }
