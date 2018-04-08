@@ -8,7 +8,7 @@ ABallProjectile::ABallProjectile()
 {
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
-	CollisionComp->InitSphereRadius(5.0f);
+	CollisionComp->InitSphereRadius(3.0f);
 	CollisionComp->BodyInstance.SetCollisionProfileName("Projectile");
 	CollisionComp->OnComponentHit.AddDynamic(this, &ABallProjectile::OnHit);		// set up a notification for when this component hits something blocking
 
